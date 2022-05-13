@@ -2,17 +2,12 @@
 
 * {
     box-sizing: border-box;
-    
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
-}
-
-.header {
-
 }
 
 .navbar {
@@ -23,6 +18,10 @@ body {
     box-shadow: 0px 3px 12px 0px #1212120F;
 }
 
+.logo img{
+    width: 140px;
+}
+
 .nav_menu {
     display: flex;
     align-items: center;
@@ -31,7 +30,7 @@ body {
 .nav_menu li {
     list-style: none;
     display: inline;
-    margin: 20px;
+    margin: 15px;
 }
 
 .nav_menu a {
@@ -40,8 +39,9 @@ body {
     font-size: 16px;
 }
 
-.nav_menu .active {
-    color: #FF5634;
+.nav_menu a:hover {
+    color:#FF5634;
+    transition: 0.5s;
 }
 
 .nav_menu i {
@@ -49,21 +49,38 @@ body {
 }
 
 button {
-    margin: 0 10px;
-    padding: 20px 25px;
-    background-color: #fff;
+    padding: 22px 40px;
     border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 20px 0 0;
+}
+
+.navbar button {
+    font-size: 14px;
 }
 
 .download {
     border: 1px solid #EDEDED;
     box-shadow: 0px 2px 6px 0px #1010100A;
+    background-color: #fff;
+}
+
+.download:hover {
+    color: #FF5634;
+    transition: 0.5s;
 }
 
 .register {
     background-color: #FF5634;
-    border: none;
     color: #fff;
+    border: 1px solid #FF5634;
+}
+
+.register:hover {
+    background-color: #fff;
+    color: #FF5634;
+    transition: 0.5s;
 }
 
 .header_main {
@@ -91,21 +108,25 @@ button {
 
 hr {
     border-bottom: none;
-    margin: 40px 0;
+    margin: 50px 0 0;
+    border-top: 1px solid#CACACA;
 }
 
 h5 {
     font-size: 18px;
     font-weight: 400;
     color: #FF5634;
+    margin-bottom: -30px;
 }
 
 h1 {
     font-size: 55px;
+    margin-bottom: 0;
 }
 
 .header_text p {
     font-size: 12px;
+    margin-bottom: 50px;
 }
 
 .statistics {
@@ -132,6 +153,258 @@ p {
 span {
     color: #FF5634;
     font-weight: 400;
+}
+
+#partners {
+    padding: 70px 100px;
+    text-align: center;
+    font-size: 20px
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#partners hr {
+    margin: 100px 0 5px;
+    border-bottom: none;
+}
+
+#our-system {
+    padding: 20px 100px;
+    text-align: center;
+    font-size: 12px;
+}
+
+#our-system img{
+    width: 200px;
+}
+
+h2 {
+    font-size: 44px;
+    margin: 30px 0;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.container p{
+    font-size: 16px;
+}
+
+#our-system hr {
+    margin: 150px 0;
+}
+
+#advantages {
+    padding: 5px 100px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.advantages_main {
+    margin-bottom: 50px;
+}
+
+#advantages p {
+    font-size: 12px;
+}
+
+.advantages_text {
+    width: 50%;
+    text-align: left;
+}
+
+.block {
+    margin: 30px 0;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.advantages_img img{
+    width: 250px;
+}
+
+.get-app {
+    color: #fff;
+    background-color: #121212;
+    margin: 0 0 50px;
+}
+
+.get-app .container {
+    padding: 0 100px;
+}
+
+.get-app p {
+    color: #fff;
+    font-size: 12px;
+}
+
+.get-app_img {
+    width: 500px;
+}
+
+.get-app_img img {
+    width: 100%;
+}
+
+.get-app button {
+    padding: 20px 30px;
+    font-size: 18px;
+}
+
+#our-features {
+    padding: 100px 100px;
+    text-align: center;
+    font-size: 12px;
+}
+
+#pros {
+    padding: 20px 100px;
+    margin-bottom: 100px;
+}
+
+.pros_img {
+    width: 500px;
+}
+
+.pros_img img {
+    width: 100%;
+}
+
+.pros_text .block img {
+    float: left;
+    padding: 0 15px;
+}
+
+.block h4 {
+    margin-bottom: 1px;
+}
+
+.pros_text .block p {
+    font-size: 12px;
+}
+
+#review {
+    background-color: #FAFAFA;
+}
+
+.review_main {
+    padding: 100px 100px;
+}
+
+.review_main h2 {
+    font-weight: 400;
+}
+
+.review_main p {
+    font-size: 12px;
+}
+
+.review_main button {
+    font-size: 14px;
+    padding: 25px 40px;
+}
+
+.review_card {
+    background-color: #fff;
+    padding: 30px 25px;
+    border-radius: 24px;
+    box-shadow: 0px 2px 12px 0px #10101014;
+    margin: 50px 0 0 0;
+    width: 330px;
+}
+
+.review_card p {
+    font-size: 14px;
+    width: 240px;
+}
+
+.customer {
+    width: 190px;
+}
+
+.customer img{
+    float: left;
+    width: 70px;
+    padding: 5px;
+}
+
+.customer p, .customer span {
+    font-size: 14px;
+    margin: 10px 0 0;
+}
+
+.customer p {
+    color: #000;
+}
+
+#deliver {
+    padding: 20px 100px;
+}
+
+#footer {
+    padding: 20px 100px 5px;
+}
+
+.footer_menu {
+    font-size: 18px;
+}
+
+#footer p {
+    color: #000;
+}
+
+#footer li {
+    list-style: none;
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+#footer a {
+    color: #656565;
+    text-decoration: none;
+}
+
+#footer .container {
+    align-items: flex-end;
+}
+
+.footer_available {
+    width: 450px;
+    font-size: 16px;
+}
+
+.city {
+    width: 200px;
+}
+
+#footer hr {
+    border-top: 1px solid #EDEDED;
+}
+
+.footer_available img {
+    width: 60px;
+    margin: 10px 5px;
+    float: left;
+}
+
+.footer_text {
+    text-align: center;
+    color: #656565;
+}
+
+#footer span {
+    margin: 0 10px;
 }
 
 @media screen and (max-width: 991px) {
@@ -164,7 +437,126 @@ span {
     }
 
     button {
-        margin-left: 80px;
+        margin-left: 50px;
+    }
+
+    #partners {
+        padding: 10px 100px;
+        text-align: center;
+        font-size: 18px
+    }
+
+    #partners img {
+        margin: 0 auto;
+        padding: 30px;
+        width: 50%;
+    }
+    
+    #partners hr {
+        margin: 50px 0 0;
+    }
+
+    #our-system {
+        padding: 20px 50px;
+    }
+    
+    #our-system img{
+        width: 150px;
+    }
+    
+    h2 {
+        font-size: 40px;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+    
+    .container p{
+        font-size: 14px;
+    }
+    
+    #our-system hr {
+        margin: 100px 0 20px;
+    }
+
+    #advantages {
+        margin-bottom: 100px;
+    }
+    
+    .advantages_main {
+        margin-bottom: 50px;
+    }
+    
+    #advantages p {
+        font-size: 12px;
+    }
+
+    .advantages_text {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .advantages_img {
+        display: none;
+    }
+    
+    .block {
+        margin: 20px 0;
+    }
+    
+    h4 {
+        font-size: 18px;
+    }
+
+    .get-app {
+        margin: 0 0;
+    }
+    
+    .get-app .container {
+        padding: 30px 100px;
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
+    }
+    
+    .get-app_img img {
+        display: none;
+    }
+
+    #our-features {
+        padding: 50px 100px;
+    }
+
+    .wrap {
+        flex-wrap: wrap-reverse;
+    }
+
+    #pros {
+        padding: 20px 50px;
+        margin-bottom: 30px;
+        margin: 0 auto;
+        width: 80%;
+    }
+    
+    .pros_img {
+        padding: 20px 0;
+    }
+    
+    .review_main {
+        padding: 50px 100px;
+    }
+
+    .review_main button, #deliver button {
+        margin-left: 0px;
+    }
+    
+    .review_card {
+        margin: 50px 0 0 0;
+    }
+
+    #deliver {
+        padding: 20px 100px;
     }
 }
 
@@ -190,11 +582,22 @@ span {
     }
 
     .header_text h1 {
-        font-size: 40px;
+        font-size: 36px;
+    }
+
+    h5 {
+        font-size: 14px;
+        margin-bottom: -20px;
+    }
+
+    .header_text p {
+        margin-bottom: 20px;
     }
 
     button {
-        margin: 30px 0;
+        margin: 10px 0;
+        font-size: 14px;
+        padding: 20px 15px;
     }
 
     hr {
@@ -207,6 +610,132 @@ span {
 
     .box p {
         font-size: 10px;
+    }
+
+    #partners {
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 18px
+    }
+
+    #partners img {
+        margin: 0 auto;
+        padding: 10px 0;
+        width: 80%;
+    }
+    
+    #partners hr {
+        margin: 50px 0 0;
+    }
+
+    #our-system {
+        padding: 20px 20px;
+    }
+
+    #our-system .container {
+        padding: 0 50px;
+    }
+    
+    #our-system img{
+        width: 150px;
+    }
+    
+    h2 {
+        font-size: 22px;
+    }
+    
+    .container p{
+        font-size: 12px;
+    }
+    
+    #our-system hr {
+        margin: 50px 0 20px;
+    }
+
+    #advantages {
+        padding: 5px 0;
+        margin-bottom: 70px;
+    }
+    
+    .advantages_main {
+        margin-bottom: 20px;
+    }
+
+    .advantages_text {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .block {
+        margin: 20px 0;
+    }
+
+    .get-app {
+        margin: 0 0;
+    }
+    
+    .get-app .container {
+        padding: 30px 20px;
+        width: 90%;
+    }
+
+    .get-app h1 {
+        font-size: 36px;
+    }
+
+    #our-features {
+        padding: 50px 20px;
+    }
+
+    #our-features .container {
+        padding: 0 40px;
+    }
+
+    #pros {
+        padding: 10px 20px;
+        margin-bottom: 20px;
+    }
+
+    .review_main {
+        padding: 50px 20px;
+    }
+
+    .review_main button {
+        margin-left: 0px;
+    }
+    
+    .review_card {
+        margin: 50px 0 0 0;
+    }
+
+    .review_main button, #deliver button {
+        font-size: 12px;
+        padding: 20px 10px;
+    }
+
+    #deliver {
+        padding: 20px 20px;
+    }
+
+    #footer {
+        padding: 20px 20px 0;
+    }
+
+    #footer ul p {
+        font-size: 18px;
+    }
+    
+    .city {
+        width: 48%;
+    }
+
+    .text {
+        font-size: 18px;
+        color: #000;
+    }
+
+    .footer_available{
+        margin: 0px 0;
     }
 }
 
